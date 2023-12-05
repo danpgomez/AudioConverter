@@ -66,9 +66,9 @@ class AudioConverter {
 fun main() {
     runBlocking {
         println("What WAV files do you want to convert? (Path to directory):")
-        val userInputForWAV = readLine()
+        val userInputForWAV = readLine().toString()
         println("Where would you like your MP3 files to end up? (Path to directory):")
-        val userInputForMP3 = readLine()
+        val userInputForMP3 = readLine().toString()
 
         val inputDirectoryPath = File(userInputForWAV)
         val outputDirectoryPath = File(userInputForMP3)
